@@ -1,0 +1,1 @@
+/usr/local/bin/gcc -fdump-rtl-expand -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/library.dir/main.c.o CMakeFiles/library.dir/interface.c.o CMakeFiles/library.dir/book_management.c.o CMakeFiles/library.dir/user.c.o  -o library 

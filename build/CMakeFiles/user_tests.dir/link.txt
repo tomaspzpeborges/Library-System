@@ -1,0 +1,1 @@
+/usr/local/bin/gcc -fdump-rtl-expand -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/user_tests.dir/unit_tests2.c.o CMakeFiles/user_tests.dir/book_management.c.o CMakeFiles/user_tests.dir/user.c.o CMakeFiles/user_tests.dir/unity/src/unity.c.o  -o user_tests 

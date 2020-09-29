@@ -1,0 +1,1644 @@
+
+;; Function test_register_user (test_register_user, funcdef_no=23, decl_uid=4666, cgraph_uid=24, symbol_order=23)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 2 6 2 (parallel [
+            (set (reg:DI 83)
+                (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -32 [0xffffffffffffffe0])))
+            (clobber (reg:CC 17 flags))
+        ]) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":18:24 -1
+     (nil))
+(insn 6 5 7 2 (set (reg:DI 2 cx)
+        (const_int 0 [0])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":18:24 -1
+     (nil))
+(insn 7 6 8 2 (set (reg:DI 1 dx)
+        (symbol_ref/f:DI ("*lC0") [flags 0x2]  <var_decl 0x10902b870 *lC0>)) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":18:24 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*lC1") [flags 0x2]  <var_decl 0x10902b900 *lC1>)) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":18:24 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:DI 5 di)
+        (reg:DI 83)) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":18:24 -1
+     (nil))
+(call_insn 10 9 11 2 (call (mem:QI (symbol_ref:DI ("create_User") [flags 0x41]  <function_decl 0x108ffb100 create_User>) [0 create_User S1 A8])
+        (const_int 0 [0])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":18:24 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (expr_list:DI (use (reg:DI 2 cx))
+                    (nil))))))
+(insn 11 10 12 2 (parallel [
+            (set (reg/f:DI 7 sp)
+                (plus:DI (reg/f:DI 7 sp)
+                    (const_int -8 [0xfffffffffffffff8])))
+            (clobber (reg:CC 17 flags))
+        ]) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":19:13 -1
+     (expr_list:REG_ARGS_SIZE (const_int 8 [0x8])
+        (nil)))
+(insn 12 11 13 2 (set (mem:DI (pre_dec:DI (reg/f:DI 7 sp)) [0  S8 A8])
+        (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [2 user+16 S8 A64])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":19:13 -1
+     (expr_list:REG_ARGS_SIZE (const_int 16 [0x10])
+        (nil)))
+(insn 13 12 14 2 (set (mem:DI (pre_dec:DI (reg/f:DI 7 sp)) [0  S8 A8])
+        (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [2 user+8 S8 A64])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":19:13 -1
+     (expr_list:REG_ARGS_SIZE (const_int 24 [0x18])
+        (nil)))
+(insn 14 13 15 2 (set (mem:DI (pre_dec:DI (reg/f:DI 7 sp)) [0  S8 A8])
+        (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [2 user+0 S8 A64])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":19:13 -1
+     (expr_list:REG_ARGS_SIZE (const_int 32 [0x20])
+        (nil)))
+(call_insn 15 14 16 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("register_User") [flags 0x41]  <function_decl 0x108ffb500 register_User>) [0 register_User S1 A8])
+            (const_int 32 [0x20]))) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":19:13 -1
+     (nil)
+    (nil))
+(insn 16 15 17 2 (parallel [
+            (set (reg/f:DI 7 sp)
+                (plus:DI (reg/f:DI 7 sp)
+                    (const_int 32 [0x20])))
+            (clobber (reg:CC 17 flags))
+        ]) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":19:13 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (nil)))
+(insn 17 16 18 2 (set (reg:SI 84)
+        (reg:SI 0 ax)) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":19:13 -1
+     (nil))
+(insn 18 17 19 2 (set (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [1 count+0 S4 A32])
+        (reg:SI 84)) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":19:13 -1
+     (nil))
+(insn 19 18 20 2 (set (reg:SI 85)
+        (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [1 count+0 S4 A32])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":21:5 -1
+     (nil))
+(insn 20 19 21 2 (set (reg:DI 82 [ _1 ])
+        (sign_extend:DI (reg:SI 85))) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":21:5 -1
+     (nil))
+(insn 21 20 22 2 (set (reg:SI 36 r8)
+        (const_int 20 [0x14])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":21:5 -1
+     (nil))
+(insn 22 21 23 2 (set (reg:DI 2 cx)
+        (const_int 21 [0x15])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":21:5 -1
+     (nil))
+(insn 23 22 24 2 (set (reg:DI 1 dx)
+        (symbol_ref/f:DI ("*lC2") [flags 0x2]  <var_decl 0x10902b990 *lC2>)) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":21:5 -1
+     (nil))
+(insn 24 23 25 2 (set (reg:DI 4 si)
+        (const_int 0 [0])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":21:5 -1
+     (nil))
+(insn 25 24 26 2 (set (reg:DI 5 di)
+        (reg:DI 82 [ _1 ])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":21:5 -1
+     (nil))
+(call_insn 26 25 0 2 (call (mem:QI (symbol_ref:DI ("UnityAssertEqualNumber") [flags 0x41]  <function_decl 0x108e8f500 UnityAssertEqualNumber>) [0 UnityAssertEqualNumber S1 A8])
+        (const_int 0 [0])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":21:5 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (expr_list:DI (use (reg:DI 2 cx))
+                    (expr_list:SI (use (reg:SI 36 r8))
+                        (nil)))))))
+
+;; Function test_remove_user (test_remove_user, funcdef_no=24, decl_uid=4670, cgraph_uid=25, symbol_order=24)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 2 6 2 (parallel [
+            (set (reg:DI 83)
+                (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -32 [0xffffffffffffffe0])))
+            (clobber (reg:CC 17 flags))
+        ]) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":34:25 -1
+     (nil))
+(insn 6 5 7 2 (set (reg:DI 2 cx)
+        (const_int 0 [0])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":34:25 -1
+     (nil))
+(insn 7 6 8 2 (set (reg:DI 1 dx)
+        (symbol_ref/f:DI ("*lC3") [flags 0x2]  <var_decl 0x10902be10 *lC3>)) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":34:25 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*lC1") [flags 0x2]  <var_decl 0x10902b900 *lC1>)) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":34:25 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:DI 5 di)
+        (reg:DI 83)) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":34:25 -1
+     (nil))
+(call_insn 10 9 11 2 (call (mem:QI (symbol_ref:DI ("create_User") [flags 0x41]  <function_decl 0x108ffb100 create_User>) [0 create_User S1 A8])
+        (const_int 0 [0])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":34:25 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (expr_list:DI (use (reg:DI 2 cx))
+                    (nil))))))
+(insn 11 10 12 2 (parallel [
+            (set (reg/f:DI 7 sp)
+                (plus:DI (reg/f:DI 7 sp)
+                    (const_int -8 [0xfffffffffffffff8])))
+            (clobber (reg:CC 17 flags))
+        ]) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":35:17 -1
+     (expr_list:REG_ARGS_SIZE (const_int 8 [0x8])
+        (nil)))
+(insn 12 11 13 2 (set (mem:DI (pre_dec:DI (reg/f:DI 7 sp)) [0  S8 A8])
+        (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [2 user5+16 S8 A64])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":35:17 -1
+     (expr_list:REG_ARGS_SIZE (const_int 16 [0x10])
+        (nil)))
+(insn 13 12 14 2 (set (mem:DI (pre_dec:DI (reg/f:DI 7 sp)) [0  S8 A8])
+        (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [2 user5+8 S8 A64])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":35:17 -1
+     (expr_list:REG_ARGS_SIZE (const_int 24 [0x18])
+        (nil)))
+(insn 14 13 15 2 (set (mem:DI (pre_dec:DI (reg/f:DI 7 sp)) [0  S8 A8])
+        (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [2 user5+0 S8 A64])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":35:17 -1
+     (expr_list:REG_ARGS_SIZE (const_int 32 [0x20])
+        (nil)))
+(call_insn 15 14 16 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("remove_User") [flags 0x41]  <function_decl 0x108ffb600 remove_User>) [0 remove_User S1 A8])
+            (const_int 32 [0x20]))) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":35:17 -1
+     (nil)
+    (nil))
+(insn 16 15 17 2 (parallel [
+            (set (reg/f:DI 7 sp)
+                (plus:DI (reg/f:DI 7 sp)
+                    (const_int 32 [0x20])))
+            (clobber (reg:CC 17 flags))
+        ]) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":35:17 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (nil)))
+(insn 17 16 18 2 (set (reg:SI 84)
+        (reg:SI 0 ax)) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":35:17 -1
+     (nil))
+(insn 18 17 19 2 (set (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [1 count+0 S4 A32])
+        (reg:SI 84)) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":35:17 -1
+     (nil))
+(insn 19 18 20 2 (set (reg:SI 85)
+        (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [1 count+0 S4 A32])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":36:5 -1
+     (nil))
+(insn 20 19 21 2 (set (reg:DI 82 [ _1 ])
+        (sign_extend:DI (reg:SI 85))) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":36:5 -1
+     (nil))
+(insn 21 20 22 2 (set (reg:SI 36 r8)
+        (const_int 20 [0x14])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":36:5 -1
+     (nil))
+(insn 22 21 23 2 (set (reg:DI 2 cx)
+        (const_int 36 [0x24])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":36:5 -1
+     (nil))
+(insn 23 22 24 2 (set (reg:DI 1 dx)
+        (symbol_ref/f:DI ("*lC4") [flags 0x2]  <var_decl 0x10902bea0 *lC4>)) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":36:5 -1
+     (nil))
+(insn 24 23 25 2 (set (reg:DI 4 si)
+        (const_int 0 [0])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":36:5 -1
+     (nil))
+(insn 25 24 26 2 (set (reg:DI 5 di)
+        (reg:DI 82 [ _1 ])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":36:5 -1
+     (nil))
+(call_insn 26 25 0 2 (call (mem:QI (symbol_ref:DI ("UnityAssertEqualNumber") [flags 0x41]  <function_decl 0x108e8f500 UnityAssertEqualNumber>) [0 UnityAssertEqualNumber S1 A8])
+        (const_int 0 [0])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":36:5 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (expr_list:DI (use (reg:DI 2 cx))
+                    (expr_list:SI (use (reg:SI 36 r8))
+                        (nil)))))))
+
+;; Function test_store_users (test_store_users, funcdef_no=25, decl_uid=4674, cgraph_uid=26, symbol_order=25)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 2 6 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [4 file+0 S8 A64])
+        (const_int 0 [0])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":50:11 -1
+     (nil))
+(insn 6 5 7 2 (set (reg:DI 84)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [4 file+0 S8 A64])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":54:13 -1
+     (nil))
+(insn 7 6 8 2 (set (reg:DI 5 di)
+        (reg:DI 84)) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":54:13 -1
+     (nil))
+(call_insn 8 7 9 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("store_Users") [flags 0x41]  <function_decl 0x108ffb300 store_Users>) [0 store_Users S1 A8])
+            (const_int 0 [0]))) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":54:13 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 9 8 10 2 (set (reg:SI 85)
+        (reg:SI 0 ax)) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":54:13 -1
+     (nil))
+(insn 10 9 11 2 (set (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -12 [0xfffffffffffffff4])) [1 count+0 S4 A32])
+        (reg:SI 85)) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":54:13 -1
+     (nil))
+(insn 11 10 12 2 (set (reg:SI 86)
+        (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -12 [0xfffffffffffffff4])) [1 count+0 S4 A32])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":55:5 -1
+     (nil))
+(insn 12 11 13 2 (set (reg:DI 82 [ _1 ])
+        (sign_extend:DI (reg:SI 86))) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":55:5 -1
+     (nil))
+(insn 13 12 14 2 (set (reg:SI 36 r8)
+        (const_int 20 [0x14])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":55:5 -1
+     (nil))
+(insn 14 13 15 2 (set (reg:DI 2 cx)
+        (const_int 55 [0x37])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":55:5 -1
+     (nil))
+(insn 15 14 16 2 (set (reg:DI 1 dx)
+        (symbol_ref/f:DI ("*lC5") [flags 0x2]  <var_decl 0x10903c240 *lC5>)) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":55:5 -1
+     (nil))
+(insn 16 15 17 2 (set (reg:DI 4 si)
+        (const_int -1 [0xffffffffffffffff])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":55:5 -1
+     (nil))
+(insn 17 16 18 2 (set (reg:DI 5 di)
+        (reg:DI 82 [ _1 ])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":55:5 -1
+     (nil))
+(call_insn 18 17 19 2 (call (mem:QI (symbol_ref:DI ("UnityAssertEqualNumber") [flags 0x41]  <function_decl 0x108e8f500 UnityAssertEqualNumber>) [0 UnityAssertEqualNumber S1 A8])
+        (const_int 0 [0])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":55:5 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (expr_list:DI (use (reg:DI 2 cx))
+                    (expr_list:SI (use (reg:SI 36 r8))
+                        (nil)))))))
+(insn 19 18 20 2 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*lC6") [flags 0x2]  <var_decl 0x10903c2d0 *lC6>)) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":58:12 -1
+     (nil))
+(insn 20 19 21 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*lC7") [flags 0x2]  <var_decl 0x10903c360 *lC7>)) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":58:12 -1
+     (nil))
+(call_insn 21 20 22 2 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("*_fopen") [flags 0x41]  <function_decl 0x108e53b00 fopen>) [0 fopen S1 A8])
+            (const_int 0 [0]))) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":58:12 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 22 21 23 2 (set (reg:DI 87)
+        (reg:DI 0 ax)) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":58:12 -1
+     (nil))
+(insn 23 22 24 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [4 file+0 S8 A64])
+        (reg:DI 87)) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":58:12 -1
+     (nil))
+(insn 24 23 25 2 (set (reg:DI 88)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [4 file+0 S8 A64])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":59:13 -1
+     (nil))
+(insn 25 24 26 2 (set (reg:DI 5 di)
+        (reg:DI 88)) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":59:13 -1
+     (nil))
+(call_insn 26 25 27 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("store_Users") [flags 0x41]  <function_decl 0x108ffb300 store_Users>) [0 store_Users S1 A8])
+            (const_int 0 [0]))) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":59:13 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 27 26 28 2 (set (reg:SI 89)
+        (reg:SI 0 ax)) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":59:13 -1
+     (nil))
+(insn 28 27 29 2 (set (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -12 [0xfffffffffffffff4])) [1 count+0 S4 A32])
+        (reg:SI 89)) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":59:13 -1
+     (nil))
+(insn 29 28 30 2 (set (reg:SI 90)
+        (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -12 [0xfffffffffffffff4])) [1 count+0 S4 A32])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":60:5 -1
+     (nil))
+(insn 30 29 31 2 (set (reg:DI 83 [ _2 ])
+        (sign_extend:DI (reg:SI 90))) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":60:5 -1
+     (nil))
+(insn 31 30 32 2 (set (reg:SI 36 r8)
+        (const_int 20 [0x14])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":60:5 -1
+     (nil))
+(insn 32 31 33 2 (set (reg:DI 2 cx)
+        (const_int 60 [0x3c])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":60:5 -1
+     (nil))
+(insn 33 32 34 2 (set (reg:DI 1 dx)
+        (symbol_ref/f:DI ("*lC8") [flags 0x2]  <var_decl 0x10903c3f0 *lC8>)) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":60:5 -1
+     (nil))
+(insn 34 33 35 2 (set (reg:DI 4 si)
+        (const_int 0 [0])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":60:5 -1
+     (nil))
+(insn 35 34 36 2 (set (reg:DI 5 di)
+        (reg:DI 83 [ _2 ])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":60:5 -1
+     (nil))
+(call_insn 36 35 37 2 (call (mem:QI (symbol_ref:DI ("UnityAssertEqualNumber") [flags 0x41]  <function_decl 0x108e8f500 UnityAssertEqualNumber>) [0 UnityAssertEqualNumber S1 A8])
+        (const_int 0 [0])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":60:5 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (expr_list:DI (use (reg:DI 2 cx))
+                    (expr_list:SI (use (reg:SI 36 r8))
+                        (nil)))))))
+(insn 37 36 38 2 (set (reg:DI 91)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [4 file+0 S8 A64])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":62:5 -1
+     (nil))
+(insn 38 37 39 2 (set (reg:DI 5 di)
+        (reg:DI 91)) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":62:5 -1
+     (nil))
+(call_insn 39 38 0 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("fclose") [flags 0x41]  <function_decl 0x108e53400 fclose>) [0 fclose S1 A8])
+            (const_int 0 [0]))) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":62:5 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+
+;; Function test_load_users (test_load_users, funcdef_no=26, decl_uid=4678, cgraph_uid=27, symbol_order=26)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 2 6 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [4 file+0 S8 A64])
+        (const_int 0 [0])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":67:11 -1
+     (nil))
+(insn 6 5 7 2 (set (reg:DI 84)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [4 file+0 S8 A64])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":71:13 -1
+     (nil))
+(insn 7 6 8 2 (set (reg:DI 5 di)
+        (reg:DI 84)) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":71:13 -1
+     (nil))
+(call_insn 8 7 9 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("load_Users") [flags 0x41]  <function_decl 0x108ffb400 load_Users>) [0 load_Users S1 A8])
+            (const_int 0 [0]))) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":71:13 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 9 8 10 2 (set (reg:SI 85)
+        (reg:SI 0 ax)) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":71:13 -1
+     (nil))
+(insn 10 9 11 2 (set (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -12 [0xfffffffffffffff4])) [1 count+0 S4 A32])
+        (reg:SI 85)) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":71:13 -1
+     (nil))
+(insn 11 10 12 2 (set (reg:SI 86)
+        (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -12 [0xfffffffffffffff4])) [1 count+0 S4 A32])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":72:5 -1
+     (nil))
+(insn 12 11 13 2 (set (reg:DI 82 [ _1 ])
+        (sign_extend:DI (reg:SI 86))) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":72:5 -1
+     (nil))
+(insn 13 12 14 2 (set (reg:SI 36 r8)
+        (const_int 20 [0x14])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":72:5 -1
+     (nil))
+(insn 14 13 15 2 (set (reg:DI 2 cx)
+        (const_int 72 [0x48])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":72:5 -1
+     (nil))
+(insn 15 14 16 2 (set (reg:DI 1 dx)
+        (symbol_ref/f:DI ("*lC5") [flags 0x2]  <var_decl 0x10903c240 *lC5>)) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":72:5 -1
+     (nil))
+(insn 16 15 17 2 (set (reg:DI 4 si)
+        (const_int -1 [0xffffffffffffffff])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":72:5 -1
+     (nil))
+(insn 17 16 18 2 (set (reg:DI 5 di)
+        (reg:DI 82 [ _1 ])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":72:5 -1
+     (nil))
+(call_insn 18 17 19 2 (call (mem:QI (symbol_ref:DI ("UnityAssertEqualNumber") [flags 0x41]  <function_decl 0x108e8f500 UnityAssertEqualNumber>) [0 UnityAssertEqualNumber S1 A8])
+        (const_int 0 [0])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":72:5 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (expr_list:DI (use (reg:DI 2 cx))
+                    (expr_list:SI (use (reg:SI 36 r8))
+                        (nil)))))))
+(insn 19 18 20 2 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*lC9") [flags 0x2]  <var_decl 0x10903c7e0 *lC9>)) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":76:12 -1
+     (nil))
+(insn 20 19 21 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*lC7") [flags 0x2]  <var_decl 0x10903c360 *lC7>)) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":76:12 -1
+     (nil))
+(call_insn 21 20 22 2 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("*_fopen") [flags 0x41]  <function_decl 0x108e53b00 fopen>) [0 fopen S1 A8])
+            (const_int 0 [0]))) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":76:12 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 22 21 23 2 (set (reg:DI 87)
+        (reg:DI 0 ax)) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":76:12 -1
+     (nil))
+(insn 23 22 24 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [4 file+0 S8 A64])
+        (reg:DI 87)) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":76:12 -1
+     (nil))
+(insn 24 23 25 2 (set (reg:DI 88)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [4 file+0 S8 A64])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":77:13 -1
+     (nil))
+(insn 25 24 26 2 (set (reg:DI 5 di)
+        (reg:DI 88)) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":77:13 -1
+     (nil))
+(call_insn 26 25 27 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("load_Users") [flags 0x41]  <function_decl 0x108ffb400 load_Users>) [0 load_Users S1 A8])
+            (const_int 0 [0]))) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":77:13 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 27 26 28 2 (set (reg:SI 89)
+        (reg:SI 0 ax)) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":77:13 -1
+     (nil))
+(insn 28 27 29 2 (set (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -12 [0xfffffffffffffff4])) [1 count+0 S4 A32])
+        (reg:SI 89)) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":77:13 -1
+     (nil))
+(insn 29 28 30 2 (set (reg:SI 90)
+        (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -12 [0xfffffffffffffff4])) [1 count+0 S4 A32])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":78:5 -1
+     (nil))
+(insn 30 29 31 2 (set (reg:DI 83 [ _2 ])
+        (sign_extend:DI (reg:SI 90))) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":78:5 -1
+     (nil))
+(insn 31 30 32 2 (set (reg:SI 36 r8)
+        (const_int 20 [0x14])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":78:5 -1
+     (nil))
+(insn 32 31 33 2 (set (reg:DI 2 cx)
+        (const_int 78 [0x4e])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":78:5 -1
+     (nil))
+(insn 33 32 34 2 (set (reg:DI 1 dx)
+        (symbol_ref/f:DI ("*lC10") [flags 0x2]  <var_decl 0x10903c870 *lC10>)) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":78:5 -1
+     (nil))
+(insn 34 33 35 2 (set (reg:DI 4 si)
+        (const_int 0 [0])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":78:5 -1
+     (nil))
+(insn 35 34 36 2 (set (reg:DI 5 di)
+        (reg:DI 83 [ _2 ])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":78:5 -1
+     (nil))
+(call_insn 36 35 37 2 (call (mem:QI (symbol_ref:DI ("UnityAssertEqualNumber") [flags 0x41]  <function_decl 0x108e8f500 UnityAssertEqualNumber>) [0 UnityAssertEqualNumber S1 A8])
+        (const_int 0 [0])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":78:5 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (expr_list:DI (use (reg:DI 2 cx))
+                    (expr_list:SI (use (reg:SI 36 r8))
+                        (nil)))))))
+(insn 37 36 38 2 (set (reg:DI 91)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [4 file+0 S8 A64])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":79:5 -1
+     (nil))
+(insn 38 37 39 2 (set (reg:DI 5 di)
+        (reg:DI 91)) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":79:5 -1
+     (nil))
+(call_insn 39 38 0 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("fclose") [flags 0x41]  <function_decl 0x108e53400 fclose>) [0 fclose S1 A8])
+            (const_int 0 [0]))) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":79:5 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+
+;; Function test_login_User (test_login_User, funcdef_no=27, decl_uid=4682, cgraph_uid=28, symbol_order=27)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 2 6 2 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*lC11") [flags 0x2]  <var_decl 0x10903cc60 *lC11>)) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":88:17 -1
+     (nil))
+(insn 6 5 7 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*lC12") [flags 0x2]  <var_decl 0x10903ccf0 *lC12>)) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":88:17 -1
+     (nil))
+(call_insn 7 6 8 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("login_User") [flags 0x41]  <function_decl 0x108ffb700 login_User>) [0 login_User S1 A8])
+            (const_int 0 [0]))) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":88:17 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 8 7 9 2 (set (reg:SI 83)
+        (reg:SI 0 ax)) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":88:17 -1
+     (nil))
+(insn 9 8 10 2 (set (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [1 count+0 S4 A32])
+        (reg:SI 83)) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":88:17 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:SI 84)
+        (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [1 count+0 S4 A32])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":89:5 -1
+     (nil))
+(insn 11 10 12 2 (set (reg:DI 82 [ _1 ])
+        (sign_extend:DI (reg:SI 84))) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":89:5 -1
+     (nil))
+(insn 12 11 13 2 (set (reg:SI 36 r8)
+        (const_int 20 [0x14])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":89:5 -1
+     (nil))
+(insn 13 12 14 2 (set (reg:DI 2 cx)
+        (const_int 89 [0x59])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":89:5 -1
+     (nil))
+(insn 14 13 15 2 (set (reg:DI 1 dx)
+        (symbol_ref/f:DI ("*lC13") [flags 0x2]  <var_decl 0x10903cd80 *lC13>)) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":89:5 -1
+     (nil))
+(insn 15 14 16 2 (set (reg:DI 4 si)
+        (const_int 0 [0])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":89:5 -1
+     (nil))
+(insn 16 15 17 2 (set (reg:DI 5 di)
+        (reg:DI 82 [ _1 ])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":89:5 -1
+     (nil))
+(call_insn 17 16 0 2 (call (mem:QI (symbol_ref:DI ("UnityAssertEqualNumber") [flags 0x41]  <function_decl 0x108e8f500 UnityAssertEqualNumber>) [0 UnityAssertEqualNumber S1 A8])
+        (const_int 0 [0])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":89:5 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (expr_list:DI (use (reg:DI 2 cx))
+                    (expr_list:SI (use (reg:SI 36 r8))
+                        (nil)))))))
+
+;; Function test_find_book_by_title_User (test_find_book_by_title_User, funcdef_no=28, decl_uid=4685, cgraph_uid=29, symbol_order=28)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 2 6 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*lC14") [flags 0x2]  <var_decl 0x109049000 *lC14>)) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":100:13 -1
+     (nil))
+(call_insn 6 5 7 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("find_book_by_title_User") [flags 0x41]  <function_decl 0x108ffb900 find_book_by_title_User>) [0 find_book_by_title_User S1 A8])
+            (const_int 0 [0]))) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":100:13 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 7 6 8 2 (set (reg:SI 83)
+        (reg:SI 0 ax)) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":100:13 -1
+     (nil))
+(insn 8 7 9 2 (set (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [1 count+0 S4 A32])
+        (reg:SI 83)) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":100:13 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:SI 84)
+        (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [1 count+0 S4 A32])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":101:5 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:DI 82 [ _1 ])
+        (sign_extend:DI (reg:SI 84))) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":101:5 -1
+     (nil))
+(insn 11 10 12 2 (set (reg:SI 36 r8)
+        (const_int 20 [0x14])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":101:5 -1
+     (nil))
+(insn 12 11 13 2 (set (reg:DI 2 cx)
+        (const_int 101 [0x65])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":101:5 -1
+     (nil))
+(insn 13 12 14 2 (set (reg:DI 1 dx)
+        (symbol_ref/f:DI ("*lC15") [flags 0x2]  <var_decl 0x109049090 *lC15>)) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":101:5 -1
+     (nil))
+(insn 14 13 15 2 (set (reg:DI 4 si)
+        (const_int 0 [0])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":101:5 -1
+     (nil))
+(insn 15 14 16 2 (set (reg:DI 5 di)
+        (reg:DI 82 [ _1 ])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":101:5 -1
+     (nil))
+(call_insn 16 15 0 2 (call (mem:QI (symbol_ref:DI ("UnityAssertEqualNumber") [flags 0x41]  <function_decl 0x108e8f500 UnityAssertEqualNumber>) [0 UnityAssertEqualNumber S1 A8])
+        (const_int 0 [0])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":101:5 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (expr_list:DI (use (reg:DI 2 cx))
+                    (expr_list:SI (use (reg:SI 36 r8))
+                        (nil)))))))
+
+;; Function test_find_book_by_authors_User (test_find_book_by_authors_User, funcdef_no=29, decl_uid=4688, cgraph_uid=30, symbol_order=29)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 2 6 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*lC16") [flags 0x2]  <var_decl 0x1090493f0 *lC16>)) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":111:13 -1
+     (nil))
+(call_insn 6 5 7 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("find_book_by_authors_User") [flags 0x41]  <function_decl 0x108ffba00 find_book_by_authors_User>) [0 find_book_by_authors_User S1 A8])
+            (const_int 0 [0]))) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":111:13 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 7 6 8 2 (set (reg:SI 83)
+        (reg:SI 0 ax)) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":111:13 -1
+     (nil))
+(insn 8 7 9 2 (set (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [1 count+0 S4 A32])
+        (reg:SI 83)) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":111:13 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:SI 84)
+        (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [1 count+0 S4 A32])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":112:5 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:DI 82 [ _1 ])
+        (sign_extend:DI (reg:SI 84))) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":112:5 -1
+     (nil))
+(insn 11 10 12 2 (set (reg:SI 36 r8)
+        (const_int 20 [0x14])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":112:5 -1
+     (nil))
+(insn 12 11 13 2 (set (reg:DI 2 cx)
+        (const_int 112 [0x70])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":112:5 -1
+     (nil))
+(insn 13 12 14 2 (set (reg:DI 1 dx)
+        (symbol_ref/f:DI ("*lC17") [flags 0x2]  <var_decl 0x109049480 *lC17>)) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":112:5 -1
+     (nil))
+(insn 14 13 15 2 (set (reg:DI 4 si)
+        (const_int 0 [0])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":112:5 -1
+     (nil))
+(insn 15 14 16 2 (set (reg:DI 5 di)
+        (reg:DI 82 [ _1 ])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":112:5 -1
+     (nil))
+(call_insn 16 15 0 2 (call (mem:QI (symbol_ref:DI ("UnityAssertEqualNumber") [flags 0x41]  <function_decl 0x108e8f500 UnityAssertEqualNumber>) [0 UnityAssertEqualNumber S1 A8])
+        (const_int 0 [0])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":112:5 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (expr_list:DI (use (reg:DI 2 cx))
+                    (expr_list:SI (use (reg:SI 36 r8))
+                        (nil)))))))
+
+;; Function test_add_book_librarian (test_add_book_librarian, funcdef_no=30, decl_uid=4691, cgraph_uid=31, symbol_order=30)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 2 6 2 (parallel [
+            (set (reg:DI 83)
+                (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -48 [0xffffffffffffffd0])))
+            (clobber (reg:CC 17 flags))
+        ]) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":119:24 -1
+     (nil))
+(insn 6 5 7 2 (set (reg:SI 37 r9)
+        (const_int 0 [0])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":119:24 -1
+     (nil))
+(insn 7 6 8 2 (set (reg:SI 36 r8)
+        (const_int 1 [0x1])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":119:24 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:SI 2 cx)
+        (const_int 2016 [0x7e0])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":119:24 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:DI 1 dx)
+        (symbol_ref/f:DI ("*lC18") [flags 0x2]  <var_decl 0x109049870 *lC18>)) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":119:24 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*lC19") [flags 0x2]  <var_decl 0x109049900 *lC19>)) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":119:24 -1
+     (nil))
+(insn 11 10 12 2 (set (reg:DI 5 di)
+        (reg:DI 83)) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":119:24 -1
+     (nil))
+(call_insn 12 11 13 2 (call (mem:QI (symbol_ref:DI ("create_Book") [flags 0x41]  <function_decl 0x108ed4400 create_Book>) [0 create_Book S1 A8])
+        (const_int 0 [0])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":119:24 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (expr_list:SI (use (reg:SI 2 cx))
+                    (expr_list:SI (use (reg:SI 36 r8))
+                        (expr_list:SI (use (reg:SI 37 r9))
+                            (nil))))))))
+(insn 13 12 14 2 (set (mem:DI (pre_dec:DI (reg/f:DI 7 sp)) [0  S8 A8])
+        (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [5 book+24 S8 A64])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":120:13 -1
+     (expr_list:REG_ARGS_SIZE (const_int 8 [0x8])
+        (nil)))
+(insn 14 13 15 2 (set (mem:DI (pre_dec:DI (reg/f:DI 7 sp)) [0  S8 A8])
+        (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [5 book+16 S8 A64])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":120:13 -1
+     (expr_list:REG_ARGS_SIZE (const_int 16 [0x10])
+        (nil)))
+(insn 15 14 16 2 (set (mem:DI (pre_dec:DI (reg/f:DI 7 sp)) [0  S8 A8])
+        (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -40 [0xffffffffffffffd8])) [5 book+8 S8 A64])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":120:13 -1
+     (expr_list:REG_ARGS_SIZE (const_int 24 [0x18])
+        (nil)))
+(insn 16 15 17 2 (set (mem:DI (pre_dec:DI (reg/f:DI 7 sp)) [0  S8 A8])
+        (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -48 [0xffffffffffffffd0])) [5 book+0 S8 A64])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":120:13 -1
+     (expr_list:REG_ARGS_SIZE (const_int 32 [0x20])
+        (nil)))
+(call_insn 17 16 18 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("add_Book_Librarian") [flags 0x41]  <function_decl 0x108ffbb00 add_Book_Librarian>) [0 add_Book_Librarian S1 A8])
+            (const_int 32 [0x20]))) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":120:13 -1
+     (nil)
+    (nil))
+(insn 18 17 19 2 (parallel [
+            (set (reg/f:DI 7 sp)
+                (plus:DI (reg/f:DI 7 sp)
+                    (const_int 32 [0x20])))
+            (clobber (reg:CC 17 flags))
+        ]) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":120:13 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (nil)))
+(insn 19 18 20 2 (set (reg:SI 84)
+        (reg:SI 0 ax)) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":120:13 -1
+     (nil))
+(insn 20 19 21 2 (set (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [1 count+0 S4 A32])
+        (reg:SI 84)) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":120:13 -1
+     (nil))
+(insn 21 20 22 2 (set (reg:SI 85)
+        (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [1 count+0 S4 A32])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":122:5 -1
+     (nil))
+(insn 22 21 23 2 (set (reg:DI 82 [ _1 ])
+        (sign_extend:DI (reg:SI 85))) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":122:5 -1
+     (nil))
+(insn 23 22 24 2 (set (reg:SI 36 r8)
+        (const_int 20 [0x14])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":122:5 -1
+     (nil))
+(insn 24 23 25 2 (set (reg:DI 2 cx)
+        (const_int 122 [0x7a])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":122:5 -1
+     (nil))
+(insn 25 24 26 2 (set (reg:DI 1 dx)
+        (symbol_ref/f:DI ("*lC20") [flags 0x2]  <var_decl 0x109049990 *lC20>)) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":122:5 -1
+     (nil))
+(insn 26 25 27 2 (set (reg:DI 4 si)
+        (const_int 0 [0])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":122:5 -1
+     (nil))
+(insn 27 26 28 2 (set (reg:DI 5 di)
+        (reg:DI 82 [ _1 ])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":122:5 -1
+     (nil))
+(call_insn 28 27 0 2 (call (mem:QI (symbol_ref:DI ("UnityAssertEqualNumber") [flags 0x41]  <function_decl 0x108e8f500 UnityAssertEqualNumber>) [0 UnityAssertEqualNumber S1 A8])
+        (const_int 0 [0])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":122:5 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (expr_list:DI (use (reg:DI 2 cx))
+                    (expr_list:SI (use (reg:SI 36 r8))
+                        (nil)))))))
+
+;; Function test_remove_book_librarian (test_remove_book_librarian, funcdef_no=31, decl_uid=4695, cgraph_uid=32, symbol_order=31)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 2 6 2 (parallel [
+            (set (reg:DI 83)
+                (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -48 [0xffffffffffffffd0])))
+            (clobber (reg:CC 17 flags))
+        ]) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":132:24 -1
+     (nil))
+(insn 6 5 7 2 (set (reg:SI 37 r9)
+        (const_int 0 [0])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":132:24 -1
+     (nil))
+(insn 7 6 8 2 (set (reg:SI 36 r8)
+        (const_int 1 [0x1])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":132:24 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:SI 2 cx)
+        (const_int 2016 [0x7e0])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":132:24 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:DI 1 dx)
+        (symbol_ref/f:DI ("*lC18") [flags 0x2]  <var_decl 0x109049870 *lC18>)) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":132:24 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*lC19") [flags 0x2]  <var_decl 0x109049900 *lC19>)) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":132:24 -1
+     (nil))
+(insn 11 10 12 2 (set (reg:DI 5 di)
+        (reg:DI 83)) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":132:24 -1
+     (nil))
+(call_insn 12 11 13 2 (call (mem:QI (symbol_ref:DI ("create_Book") [flags 0x41]  <function_decl 0x108ed4400 create_Book>) [0 create_Book S1 A8])
+        (const_int 0 [0])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":132:24 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (expr_list:SI (use (reg:SI 2 cx))
+                    (expr_list:SI (use (reg:SI 36 r8))
+                        (expr_list:SI (use (reg:SI 37 r9))
+                            (nil))))))))
+(insn 13 12 14 2 (set (mem:DI (pre_dec:DI (reg/f:DI 7 sp)) [0  S8 A8])
+        (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [5 book+24 S8 A64])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":133:13 -1
+     (expr_list:REG_ARGS_SIZE (const_int 8 [0x8])
+        (nil)))
+(insn 14 13 15 2 (set (mem:DI (pre_dec:DI (reg/f:DI 7 sp)) [0  S8 A8])
+        (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [5 book+16 S8 A64])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":133:13 -1
+     (expr_list:REG_ARGS_SIZE (const_int 16 [0x10])
+        (nil)))
+(insn 15 14 16 2 (set (mem:DI (pre_dec:DI (reg/f:DI 7 sp)) [0  S8 A8])
+        (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -40 [0xffffffffffffffd8])) [5 book+8 S8 A64])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":133:13 -1
+     (expr_list:REG_ARGS_SIZE (const_int 24 [0x18])
+        (nil)))
+(insn 16 15 17 2 (set (mem:DI (pre_dec:DI (reg/f:DI 7 sp)) [0  S8 A8])
+        (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -48 [0xffffffffffffffd0])) [5 book+0 S8 A64])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":133:13 -1
+     (expr_list:REG_ARGS_SIZE (const_int 32 [0x20])
+        (nil)))
+(call_insn 17 16 18 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("remove_Book_Librarian") [flags 0x41]  <function_decl 0x108ffbc00 remove_Book_Librarian>) [0 remove_Book_Librarian S1 A8])
+            (const_int 32 [0x20]))) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":133:13 -1
+     (nil)
+    (nil))
+(insn 18 17 19 2 (parallel [
+            (set (reg/f:DI 7 sp)
+                (plus:DI (reg/f:DI 7 sp)
+                    (const_int 32 [0x20])))
+            (clobber (reg:CC 17 flags))
+        ]) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":133:13 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (nil)))
+(insn 19 18 20 2 (set (reg:SI 84)
+        (reg:SI 0 ax)) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":133:13 -1
+     (nil))
+(insn 20 19 21 2 (set (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [1 count+0 S4 A32])
+        (reg:SI 84)) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":133:13 -1
+     (nil))
+(insn 21 20 22 2 (set (reg:SI 85)
+        (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [1 count+0 S4 A32])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":135:5 -1
+     (nil))
+(insn 22 21 23 2 (set (reg:DI 82 [ _1 ])
+        (sign_extend:DI (reg:SI 85))) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":135:5 -1
+     (nil))
+(insn 23 22 24 2 (set (reg:SI 36 r8)
+        (const_int 20 [0x14])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":135:5 -1
+     (nil))
+(insn 24 23 25 2 (set (reg:DI 2 cx)
+        (const_int 135 [0x87])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":135:5 -1
+     (nil))
+(insn 25 24 26 2 (set (reg:DI 1 dx)
+        (symbol_ref/f:DI ("*lC21") [flags 0x2]  <var_decl 0x109049d80 *lC21>)) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":135:5 -1
+     (nil))
+(insn 26 25 27 2 (set (reg:DI 4 si)
+        (const_int 0 [0])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":135:5 -1
+     (nil))
+(insn 27 26 28 2 (set (reg:DI 5 di)
+        (reg:DI 82 [ _1 ])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":135:5 -1
+     (nil))
+(call_insn 28 27 0 2 (call (mem:QI (symbol_ref:DI ("UnityAssertEqualNumber") [flags 0x41]  <function_decl 0x108e8f500 UnityAssertEqualNumber>) [0 UnityAssertEqualNumber S1 A8])
+        (const_int 0 [0])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":135:5 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (expr_list:DI (use (reg:DI 2 cx))
+                    (expr_list:SI (use (reg:SI 36 r8))
+                        (nil)))))))
+
+;; Function test_borrow_Book_User (test_borrow_Book_User, funcdef_no=32, decl_uid=4699, cgraph_uid=33, symbol_order=32)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 2 6 2 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*lC16") [flags 0x2]  <var_decl 0x1090493f0 *lC16>)) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":145:13 -1
+     (nil))
+(insn 6 5 7 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*lC22") [flags 0x2]  <var_decl 0x10918c1b0 *lC22>)) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":145:13 -1
+     (nil))
+(call_insn 7 6 8 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("borrow_Book_User") [flags 0x41]  <function_decl 0x108ffbd00 borrow_Book_User>) [0 borrow_Book_User S1 A8])
+            (const_int 0 [0]))) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":145:13 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 8 7 9 2 (set (reg:SI 83)
+        (reg:SI 0 ax)) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":145:13 -1
+     (nil))
+(insn 9 8 10 2 (set (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [1 count+0 S4 A32])
+        (reg:SI 83)) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":145:13 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:SI 84)
+        (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [1 count+0 S4 A32])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":146:5 -1
+     (nil))
+(insn 11 10 12 2 (set (reg:DI 82 [ _1 ])
+        (sign_extend:DI (reg:SI 84))) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":146:5 -1
+     (nil))
+(insn 12 11 13 2 (set (reg:SI 36 r8)
+        (const_int 20 [0x14])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":146:5 -1
+     (nil))
+(insn 13 12 14 2 (set (reg:DI 2 cx)
+        (const_int 146 [0x92])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":146:5 -1
+     (nil))
+(insn 14 13 15 2 (set (reg:DI 1 dx)
+        (symbol_ref/f:DI ("*lC23") [flags 0x2]  <var_decl 0x10918c240 *lC23>)) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":146:5 -1
+     (nil))
+(insn 15 14 16 2 (set (reg:DI 4 si)
+        (const_int 0 [0])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":146:5 -1
+     (nil))
+(insn 16 15 17 2 (set (reg:DI 5 di)
+        (reg:DI 82 [ _1 ])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":146:5 -1
+     (nil))
+(call_insn 17 16 0 2 (call (mem:QI (symbol_ref:DI ("UnityAssertEqualNumber") [flags 0x41]  <function_decl 0x108e8f500 UnityAssertEqualNumber>) [0 UnityAssertEqualNumber S1 A8])
+        (const_int 0 [0])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":146:5 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (expr_list:DI (use (reg:DI 2 cx))
+                    (expr_list:SI (use (reg:SI 36 r8))
+                        (nil)))))))
+
+;; Function test_return_Book_User (test_return_Book_User, funcdef_no=33, decl_uid=4702, cgraph_uid=34, symbol_order=33)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 2 6 2 (set (reg:QI 0 ax)
+        (const_int 0 [0])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":155:13 -1
+     (nil))
+(call_insn 6 5 7 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("return_Book_User") [flags 0x41]  <function_decl 0x108ffbe00 return_Book_User>) [0 return_Book_User S1 A8])
+            (const_int 0 [0]))) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":155:13 -1
+     (nil)
+    (expr_list (use (reg:QI 0 ax))
+        (nil)))
+(insn 7 6 8 2 (set (reg:SI 83)
+        (reg:SI 0 ax)) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":155:13 -1
+     (nil))
+(insn 8 7 9 2 (set (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [1 count+0 S4 A32])
+        (reg:SI 83)) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":155:13 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:SI 84)
+        (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [1 count+0 S4 A32])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":156:5 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:DI 82 [ _1 ])
+        (sign_extend:DI (reg:SI 84))) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":156:5 -1
+     (nil))
+(insn 11 10 12 2 (set (reg:SI 36 r8)
+        (const_int 20 [0x14])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":156:5 -1
+     (nil))
+(insn 12 11 13 2 (set (reg:DI 2 cx)
+        (const_int 156 [0x9c])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":156:5 -1
+     (nil))
+(insn 13 12 14 2 (set (reg:DI 1 dx)
+        (symbol_ref/f:DI ("*lC24") [flags 0x2]  <var_decl 0x10918c5a0 *lC24>)) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":156:5 -1
+     (nil))
+(insn 14 13 15 2 (set (reg:DI 4 si)
+        (const_int 0 [0])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":156:5 -1
+     (nil))
+(insn 15 14 16 2 (set (reg:DI 5 di)
+        (reg:DI 82 [ _1 ])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":156:5 -1
+     (nil))
+(call_insn 16 15 0 2 (call (mem:QI (symbol_ref:DI ("UnityAssertEqualNumber") [flags 0x41]  <function_decl 0x108e8f500 UnityAssertEqualNumber>) [0 UnityAssertEqualNumber S1 A8])
+        (const_int 0 [0])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":156:5 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (expr_list:DI (use (reg:DI 2 cx))
+                    (expr_list:SI (use (reg:SI 36 r8))
+                        (nil)))))))
+
+;; Function setUp (setUp, funcdef_no=34, decl_uid=3251, cgraph_uid=35, symbol_order=34)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 0 2 NOTE_INSN_FUNCTION_BEG)
+
+;; Function tearDown (tearDown, funcdef_no=35, decl_uid=3253, cgraph_uid=36, symbol_order=35)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 0 2 NOTE_INSN_FUNCTION_BEG)
+
+;; Function main (main, funcdef_no=36, decl_uid=4709, cgraph_uid=37, symbol_order=36)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+Removing jump 86.
+Merging block 5 into block 2...
+Merged blocks 2 and 5.
+Merged 2 and 5 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 2 6 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*lC25") [flags 0x2]  <var_decl 0x10918cea0 *lC25>)) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":173:2 -1
+     (nil))
+(call_insn 6 5 7 2 (call (mem:QI (symbol_ref:DI ("UnityBegin") [flags 0x41]  <function_decl 0x108e79c00 UnityBegin>) [0 UnityBegin S1 A8])
+        (const_int 0 [0])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":173:2 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 7 6 8 2 (set (reg:SI 1 dx)
+        (const_int 176 [0xb0])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":176:5 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*lC26") [flags 0x2]  <var_decl 0x10918cf30 *lC26>)) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":176:5 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:DI 5 di)
+        (symbol_ref:DI ("test_load_users") [flags 0x403]  <function_decl 0x108fff700 test_load_users>)) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":176:5 -1
+     (nil))
+(call_insn 10 9 11 2 (call (mem:QI (symbol_ref:DI ("UnityDefaultTestRun") [flags 0x41]  <function_decl 0x108e79400 UnityDefaultTestRun>) [0 UnityDefaultTestRun S1 A8])
+        (const_int 0 [0])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":176:5 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:SI (use (reg:SI 1 dx))
+                (nil)))))
+(insn 11 10 12 2 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*lC9") [flags 0x2]  <var_decl 0x10903c7e0 *lC9>)) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":177:18 -1
+     (nil))
+(insn 12 11 13 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*lC27") [flags 0x2]  <var_decl 0x109196000 *lC27>)) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":177:18 -1
+     (nil))
+(call_insn 13 12 14 2 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("*_fopen") [flags 0x41]  <function_decl 0x108e53b00 fopen>) [0 fopen S1 A8])
+            (const_int 0 [0]))) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":177:18 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 14 13 15 2 (set (reg:DI 84)
+        (reg:DI 0 ax)) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":177:18 -1
+     (nil))
+(insn 15 14 16 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [4 file+0 S8 A64])
+        (reg:DI 84)) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":177:18 -1
+     (nil))
+(insn 16 15 17 2 (set (reg:DI 85)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [4 file+0 S8 A64])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":178:5 -1
+     (nil))
+(insn 17 16 18 2 (set (reg:DI 5 di)
+        (reg:DI 85)) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":178:5 -1
+     (nil))
+(call_insn 18 17 19 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("load_books") [flags 0x41]  <function_decl 0x108ed4700 load_books>) [0 load_books S1 A8])
+            (const_int 0 [0]))) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":178:5 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 19 18 20 2 (set (reg:DI 86)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [4 file+0 S8 A64])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":179:5 -1
+     (nil))
+(insn 20 19 21 2 (set (reg:DI 5 di)
+        (reg:DI 86)) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":179:5 -1
+     (nil))
+(call_insn 21 20 22 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("fclose") [flags 0x41]  <function_decl 0x108e53400 fclose>) [0 fclose S1 A8])
+            (const_int 0 [0]))) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":179:5 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 22 21 23 2 (set (reg:SI 1 dx)
+        (const_int 182 [0xb6])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":182:5 -1
+     (nil))
+(insn 23 22 24 2 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*lC28") [flags 0x2]  <var_decl 0x109196090 *lC28>)) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":182:5 -1
+     (nil))
+(insn 24 23 25 2 (set (reg:DI 5 di)
+        (symbol_ref:DI ("test_register_user") [flags 0x403]  <function_decl 0x108fff000 test_register_user>)) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":182:5 -1
+     (nil))
+(call_insn 25 24 26 2 (call (mem:QI (symbol_ref:DI ("UnityDefaultTestRun") [flags 0x41]  <function_decl 0x108e79400 UnityDefaultTestRun>) [0 UnityDefaultTestRun S1 A8])
+        (const_int 0 [0])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":182:5 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:SI (use (reg:SI 1 dx))
+                (nil)))))
+(insn 26 25 27 2 (set (reg:QI 0 ax)
+        (const_int 0 [0])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":183:5 -1
+     (nil))
+(call_insn 27 26 28 2 (call (mem:QI (symbol_ref:DI ("print_UserArray_Database") [flags 0x41]  <function_decl 0x108ffb000 print_UserArray_Database>) [0 print_UserArray_Database S1 A8])
+        (const_int 0 [0])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":183:5 -1
+     (nil)
+    (expr_list (use (reg:QI 0 ax))
+        (nil)))
+(insn 28 27 29 2 (set (reg:SI 1 dx)
+        (const_int 184 [0xb8])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":184:5 -1
+     (nil))
+(insn 29 28 30 2 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*lC29") [flags 0x2]  <var_decl 0x109196120 *lC29>)) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":184:5 -1
+     (nil))
+(insn 30 29 31 2 (set (reg:DI 5 di)
+        (symbol_ref:DI ("test_remove_user") [flags 0x403]  <function_decl 0x108fff200 test_remove_user>)) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":184:5 -1
+     (nil))
+(call_insn 31 30 32 2 (call (mem:QI (symbol_ref:DI ("UnityDefaultTestRun") [flags 0x41]  <function_decl 0x108e79400 UnityDefaultTestRun>) [0 UnityDefaultTestRun S1 A8])
+        (const_int 0 [0])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":184:5 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:SI (use (reg:SI 1 dx))
+                (nil)))))
+(insn 32 31 33 2 (set (reg:QI 0 ax)
+        (const_int 0 [0])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":185:5 -1
+     (nil))
+(call_insn 33 32 34 2 (call (mem:QI (symbol_ref:DI ("print_UserArray_Database") [flags 0x41]  <function_decl 0x108ffb000 print_UserArray_Database>) [0 print_UserArray_Database S1 A8])
+        (const_int 0 [0])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":185:5 -1
+     (nil)
+    (expr_list (use (reg:QI 0 ax))
+        (nil)))
+(insn 34 33 35 2 (set (reg:SI 1 dx)
+        (const_int 188 [0xbc])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":188:5 -1
+     (nil))
+(insn 35 34 36 2 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*lC30") [flags 0x2]  <var_decl 0x1091961b0 *lC30>)) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":188:5 -1
+     (nil))
+(insn 36 35 37 2 (set (reg:DI 5 di)
+        (symbol_ref:DI ("test_login_User") [flags 0x403]  <function_decl 0x108fffa00 test_login_User>)) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":188:5 -1
+     (nil))
+(call_insn 37 36 38 2 (call (mem:QI (symbol_ref:DI ("UnityDefaultTestRun") [flags 0x41]  <function_decl 0x108e79400 UnityDefaultTestRun>) [0 UnityDefaultTestRun S1 A8])
+        (const_int 0 [0])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":188:5 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:SI (use (reg:SI 1 dx))
+                (nil)))))
+(insn 38 37 39 2 (set (reg:SI 1 dx)
+        (const_int 189 [0xbd])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":189:5 -1
+     (nil))
+(insn 39 38 40 2 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*lC31") [flags 0x2]  <var_decl 0x109196240 *lC31>)) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":189:5 -1
+     (nil))
+(insn 40 39 41 2 (set (reg:DI 5 di)
+        (symbol_ref:DI ("test_borrow_Book_User") [flags 0x403]  <function_decl 0x109009400 test_borrow_Book_User>)) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":189:5 -1
+     (nil))
+(call_insn 41 40 42 2 (call (mem:QI (symbol_ref:DI ("UnityDefaultTestRun") [flags 0x41]  <function_decl 0x108e79400 UnityDefaultTestRun>) [0 UnityDefaultTestRun S1 A8])
+        (const_int 0 [0])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":189:5 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:SI (use (reg:SI 1 dx))
+                (nil)))))
+(insn 42 41 43 2 (set (reg:SI 1 dx)
+        (const_int 190 [0xbe])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":190:5 -1
+     (nil))
+(insn 43 42 44 2 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*lC32") [flags 0x2]  <var_decl 0x1091962d0 *lC32>)) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":190:5 -1
+     (nil))
+(insn 44 43 45 2 (set (reg:DI 5 di)
+        (symbol_ref:DI ("test_return_Book_User") [flags 0x403]  <function_decl 0x109009600 test_return_Book_User>)) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":190:5 -1
+     (nil))
+(call_insn 45 44 46 2 (call (mem:QI (symbol_ref:DI ("UnityDefaultTestRun") [flags 0x41]  <function_decl 0x108e79400 UnityDefaultTestRun>) [0 UnityDefaultTestRun S1 A8])
+        (const_int 0 [0])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":190:5 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:SI (use (reg:SI 1 dx))
+                (nil)))))
+(insn 46 45 47 2 (set (reg:SI 1 dx)
+        (const_int 193 [0xc1])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":193:5 -1
+     (nil))
+(insn 47 46 48 2 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*lC33") [flags 0x2]  <var_decl 0x109196360 *lC33>)) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":193:5 -1
+     (nil))
+(insn 48 47 49 2 (set (reg:DI 5 di)
+        (symbol_ref:DI ("test_find_book_by_title_User") [flags 0x403]  <function_decl 0x108fffc00 test_find_book_by_title_User>)) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":193:5 -1
+     (nil))
+(call_insn 49 48 50 2 (call (mem:QI (symbol_ref:DI ("UnityDefaultTestRun") [flags 0x41]  <function_decl 0x108e79400 UnityDefaultTestRun>) [0 UnityDefaultTestRun S1 A8])
+        (const_int 0 [0])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":193:5 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:SI (use (reg:SI 1 dx))
+                (nil)))))
+(insn 50 49 51 2 (set (reg:SI 1 dx)
+        (const_int 194 [0xc2])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":194:5 -1
+     (nil))
+(insn 51 50 52 2 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*lC34") [flags 0x2]  <var_decl 0x1091963f0 *lC34>)) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":194:5 -1
+     (nil))
+(insn 52 51 53 2 (set (reg:DI 5 di)
+        (symbol_ref:DI ("test_find_book_by_authors_User") [flags 0x403]  <function_decl 0x108fffe00 test_find_book_by_authors_User>)) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":194:5 -1
+     (nil))
+(call_insn 53 52 54 2 (call (mem:QI (symbol_ref:DI ("UnityDefaultTestRun") [flags 0x41]  <function_decl 0x108e79400 UnityDefaultTestRun>) [0 UnityDefaultTestRun S1 A8])
+        (const_int 0 [0])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":194:5 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:SI (use (reg:SI 1 dx))
+                (nil)))))
+(insn 54 53 55 2 (set (reg:QI 0 ax)
+        (const_int 0 [0])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":197:5 -1
+     (nil))
+(call_insn 55 54 56 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("logout_User") [flags 0x41]  <function_decl 0x108ffb800 logout_User>) [0 logout_User S1 A8])
+            (const_int 0 [0]))) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":197:5 -1
+     (nil)
+    (expr_list (use (reg:QI 0 ax))
+        (nil)))
+(insn 56 55 57 2 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*lC35") [flags 0x2]  <var_decl 0x109196480 *lC35>)) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":198:5 -1
+     (nil))
+(insn 57 56 58 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*lC35") [flags 0x2]  <var_decl 0x109196480 *lC35>)) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":198:5 -1
+     (nil))
+(call_insn 58 57 59 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("login_User") [flags 0x41]  <function_decl 0x108ffb700 login_User>) [0 login_User S1 A8])
+            (const_int 0 [0]))) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":198:5 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 59 58 60 2 (set (reg:SI 1 dx)
+        (const_int 199 [0xc7])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":199:5 -1
+     (nil))
+(insn 60 59 61 2 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*lC36") [flags 0x2]  <var_decl 0x109196510 *lC36>)) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":199:5 -1
+     (nil))
+(insn 61 60 62 2 (set (reg:DI 5 di)
+        (symbol_ref:DI ("test_add_book_librarian") [flags 0x403]  <function_decl 0x109009000 test_add_book_librarian>)) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":199:5 -1
+     (nil))
+(call_insn 62 61 63 2 (call (mem:QI (symbol_ref:DI ("UnityDefaultTestRun") [flags 0x41]  <function_decl 0x108e79400 UnityDefaultTestRun>) [0 UnityDefaultTestRun S1 A8])
+        (const_int 0 [0])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":199:5 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:SI (use (reg:SI 1 dx))
+                (nil)))))
+(insn 63 62 64 2 (set (reg:SI 1 dx)
+        (const_int 200 [0xc8])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":200:5 -1
+     (nil))
+(insn 64 63 65 2 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*lC37") [flags 0x2]  <var_decl 0x1091965a0 *lC37>)) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":200:5 -1
+     (nil))
+(insn 65 64 66 2 (set (reg:DI 5 di)
+        (symbol_ref:DI ("test_remove_book_librarian") [flags 0x403]  <function_decl 0x109009200 test_remove_book_librarian>)) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":200:5 -1
+     (nil))
+(call_insn 66 65 67 2 (call (mem:QI (symbol_ref:DI ("UnityDefaultTestRun") [flags 0x41]  <function_decl 0x108e79400 UnityDefaultTestRun>) [0 UnityDefaultTestRun S1 A8])
+        (const_int 0 [0])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":200:5 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:SI (use (reg:SI 1 dx))
+                (nil)))))
+(insn 67 66 68 2 (set (reg:QI 0 ax)
+        (const_int 0 [0])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":201:5 -1
+     (nil))
+(call_insn 68 67 69 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("logout_User") [flags 0x41]  <function_decl 0x108ffb800 logout_User>) [0 logout_User S1 A8])
+            (const_int 0 [0]))) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":201:5 -1
+     (nil)
+    (expr_list (use (reg:QI 0 ax))
+        (nil)))
+(insn 69 68 70 2 (set (reg:QI 0 ax)
+        (const_int 0 [0])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":204:5 -1
+     (nil))
+(call_insn 70 69 71 2 (call (mem:QI (symbol_ref:DI ("print_UserArray_Database") [flags 0x41]  <function_decl 0x108ffb000 print_UserArray_Database>) [0 print_UserArray_Database S1 A8])
+        (const_int 0 [0])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":204:5 -1
+     (nil)
+    (expr_list (use (reg:QI 0 ax))
+        (nil)))
+(insn 71 70 72 2 (set (reg:QI 0 ax)
+        (const_int 0 [0])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":205:5 -1
+     (nil))
+(call_insn 72 71 73 2 (call (mem:QI (symbol_ref:DI ("print_BookArray_Database") [flags 0x41]  <function_decl 0x108ed4200 print_BookArray_Database>) [0 print_BookArray_Database S1 A8])
+        (const_int 0 [0])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":205:5 -1
+     (nil)
+    (expr_list (use (reg:QI 0 ax))
+        (nil)))
+(insn 73 72 74 2 (set (reg:SI 1 dx)
+        (const_int 208 [0xd0])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":208:5 -1
+     (nil))
+(insn 74 73 75 2 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*lC38") [flags 0x2]  <var_decl 0x109196630 *lC38>)) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":208:5 -1
+     (nil))
+(insn 75 74 76 2 (set (reg:DI 5 di)
+        (symbol_ref:DI ("test_store_users") [flags 0x403]  <function_decl 0x108fff400 test_store_users>)) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":208:5 -1
+     (nil))
+(call_insn 76 75 77 2 (call (mem:QI (symbol_ref:DI ("UnityDefaultTestRun") [flags 0x41]  <function_decl 0x108e79400 UnityDefaultTestRun>) [0 UnityDefaultTestRun S1 A8])
+        (const_int 0 [0])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":208:5 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:SI (use (reg:SI 1 dx))
+                (nil)))))
+(insn 77 76 78 2 (set (reg:QI 0 ax)
+        (const_int 0 [0])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":209:5 -1
+     (nil))
+(call_insn 78 77 79 2 (call (mem:QI (symbol_ref:DI ("cleanup_UserArray_Database") [flags 0x41]  <function_decl 0x108ffbf00 cleanup_UserArray_Database>) [0 cleanup_UserArray_Database S1 A8])
+        (const_int 0 [0])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":209:5 -1
+     (nil)
+    (expr_list (use (reg:QI 0 ax))
+        (nil)))
+(insn 79 78 80 2 (set (reg:QI 0 ax)
+        (const_int 0 [0])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":210:5 -1
+     (nil))
+(call_insn 80 79 81 2 (call (mem:QI (symbol_ref:DI ("cleanup_BookArray_Database") [flags 0x41]  <function_decl 0x108ed4f00 cleanup_BookArray_Database>) [0 cleanup_BookArray_Database S1 A8])
+        (const_int 0 [0])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":210:5 -1
+     (nil)
+    (expr_list (use (reg:QI 0 ax))
+        (nil)))
+(call_insn 81 80 82 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("UnityEnd") [flags 0x41]  <function_decl 0x108e79d00 UnityEnd>) [0 UnityEnd S1 A8])
+            (const_int 0 [0]))) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":213:9 -1
+     (nil)
+    (nil))
+(insn 82 81 85 2 (set (reg:SI 82 [ _28 ])
+        (reg:SI 0 ax)) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":213:9 -1
+     (nil))
+(insn 85 82 89 2 (set (reg:SI 83 [ <retval> ])
+        (reg:SI 82 [ _28 ])) -1
+     (nil))
+(insn 89 85 90 2 (set (reg/i:SI 0 ax)
+        (reg:SI 83 [ <retval> ])) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":214:1 -1
+     (nil))
+(insn 90 89 0 2 (use (reg/i:SI 0 ax)) "/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c":214:1 -1
+     (nil))

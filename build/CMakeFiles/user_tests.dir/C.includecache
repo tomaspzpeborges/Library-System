@@ -1,0 +1,88 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../unity/include/unity.h
+unity_internals.h
+../unity/include/unity_internals.h
+
+../unity/include/unity_internals.h
+unity_config.h
+../unity/include/unity_config.h
+setjmp.h
+-
+math.h
+-
+stddef.h
+-
+stdarg.h
+-
+stdint.h
+-
+limits.h
+-
+stdio.h
+-
+stdio.h
+-
+time.h
+-
+time.h
+-
+
+/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/book_management.c
+book_management.h
+/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/book_management.h
+stdlib.h
+-
+string.h
+-
+stdio.h
+-
+
+/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/book_management.h
+stdio.h
+-
+
+/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unit_tests2.c
+unity.h
+/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unity.h
+book_management.h
+/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/book_management.h
+user.h
+/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/user.h
+stdlib.h
+-
+
+/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unity/src/unity.c
+unity.h
+/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/unity/src/unity.h
+stddef.h
+-
+avr/pgmspace.h
+-
+
+/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/user.c
+book_management.h
+/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/book_management.h
+user.h
+/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/user.h
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+
+/Users/tomaspzpeborges/OneDrive - University of Leeds/Programming Project/sc19tpzp/CW1/user.h
+stdlib.h
+-
+stdio.h
+-
+string.h
+-
+
